@@ -11,6 +11,7 @@ function CelebritiesPage() {
             <article>
             {shittyStars.map((star) => {
                     return(
+                     //Ici je fais appel à mon composant CelebrityCard pour utiliser la props qui affichera les infos stockés dans cette même props 
                         <CelebrityCard starToDisplay={star}/>
                     )
                 })}

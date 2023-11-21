@@ -21,6 +21,7 @@ function HomePage() {
                 <h2>Les 5 célébrités les récentes</h2>
                 {lastShittyStars.map((star) => {
                     return(
+                    //Ici je fais appel à mon composant CelebrityCard pour utiliser la props qui affichera les infos stockés dans cette même props
                         <CelebrityCard starToDisplay={star}/>
                     )
                 })}
@@ -29,6 +30,7 @@ function HomePage() {
             <h2>Les 3 célébrités choisies par la rédac</h2>
                 {starsPickedByTeam.map((star) => {
                     return(
+                    //Ici je fais appel à mon composant CelebrityCard pour utiliser la props qui affichera les infos stockés dans cette même props
                         <CelebrityCard starToDisplay={star}/>
                     )
                 })}

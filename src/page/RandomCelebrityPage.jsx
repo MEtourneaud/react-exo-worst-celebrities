@@ -5,6 +5,7 @@ import { shittyStars } from "../utils/celebrity-utils";
 function RandomCelebrityPage() {
     const randomStarsIndex = shittyStars[(Math.random() * (shittyStars.length - 1)).toFixed(0)]
 
+    //const randomStarsIndex = (Math.random() * (shittyStars.length - 1)).toFixed(0)
     // const randomStar = shittyStars[randomStarsIndex]
 
     return(

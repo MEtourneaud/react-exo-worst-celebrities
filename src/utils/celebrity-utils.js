@@ -1,3 +1,4 @@
+//Je stocke ici le tableau afin de pouvoir le rappeler là où j'en ai besoin sans avoir à le placer dans chaque fois où il sera utilisé
 export const shittyStars = [
   {
     id: 1,
