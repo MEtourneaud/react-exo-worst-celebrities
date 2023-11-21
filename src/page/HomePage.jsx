@@ -11,7 +11,7 @@ function HomePage() {
       const lastShittyStars = starsSortedByDate.slice(-5)
 
       const starsPickedByTeam = shittyStars.filter((star) => {
-        return star.isPickedByTeam == true
+        return star.isPickedByTeam === true
       })
 
     return(
