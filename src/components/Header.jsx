@@ -34,13 +34,20 @@ function Header( {currentPage} ) {
                         <Link to="/tvspeakers">Présentateurs TV</Link>
                     )}
                 </li>
-                {/* <li>
+                <li>
                     {currentPage === "CopyrightPage" ? (
                         <strong><Link to="/copyright">Copyright</Link></strong>
                     ) : (
                         <Link to="/copyright">Copyright</Link>
                     )}
-                </li> */}
+                </li>
+                <li>
+                    {currentPage === "FormMessagePage" ? (
+                        <strong><Link to="/message">Message</Link></strong>
+                    ) : (
+                        <Link to="/message">Message</Link>
+                    )}
+                </li>
             </ul>
         </header>
     )
