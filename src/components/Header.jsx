@@ -34,6 +34,13 @@ function Header( {currentPage} ) {
                         <Link to="/tvspeakers">Présentateurs TV</Link>
                     )}
                 </li>
+                {/* <li>
+                    {currentPage === "CopyrightPage" ? (
+                        <strong><Link to="/copyright">Copyright</Link></strong>
+                    ) : (
+                        <Link to="/copyright">Copyright</Link>
+                    )}
+                </li> */}
             </ul>
         </header>
     )
