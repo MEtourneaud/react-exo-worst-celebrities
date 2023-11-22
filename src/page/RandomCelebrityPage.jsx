@@ -10,6 +10,7 @@ function RandomCelebrityPage() {
 
     return(
         <>
+            {/* Je fais appel à la props avec son paramètre currentPage pour me permettre d'afficher en gras "Célébrité au hasard" du menu quand je suis sur cette page */}
             <Header currentPage={"RandomCelebrityPage"}/>
             <h2>Célébrité choisi au hasard</h2>
             <article>

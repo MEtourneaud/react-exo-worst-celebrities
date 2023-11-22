@@ -5,6 +5,7 @@ function Header( {currentPage} ) {
         <header>
             <ul>
                 <li>
+                {/* Ici je crée une props qui va me permettre de mettre en gras dans le menu, la page sur laquelle je me trouve */}
                     {currentPage == "HomePage" ? ( 
                         <strong><Link to="/">Accueil</Link></strong>
                     ) : (

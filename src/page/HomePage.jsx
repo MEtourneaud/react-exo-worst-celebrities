@@ -16,6 +16,7 @@ function HomePage() {
 
     return(
         <main>
+            {/* Je fais appel à la props avec son paramètre currentPage pour me permettre d'afficher en gras "Accueil" du menu quand je suis sur cette page */}
             <Header currentPage={"HomePage"}/>
             <div>
                 <h2>Les 5 célébrités les récentes</h2>
