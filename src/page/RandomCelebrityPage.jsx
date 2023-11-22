@@ -10,7 +10,7 @@ function RandomCelebrityPage() {
 
     return(
         <>
-            <Header />
+            <Header currentPage={"RandomCelebrityPage"}/>
             <h2>Célébrité choisi au hasard</h2>
             <article>
                 <h3>{randomStarsIndex.name}</h3>

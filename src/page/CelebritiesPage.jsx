@@ -6,7 +6,7 @@ import CelebrityCard from "../components/CelebrityCard";
 function CelebritiesPage() {
     return(
         <>
-            <Header />
+            <Header currentPage={"CelebritiesPage"}/>
             <h2>Toutes les pires célébrités</h2>
             <article>
             {shittyStars.map((star) => {
