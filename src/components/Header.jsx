@@ -55,6 +55,13 @@ function Header( {currentPage} ) {
                         <Link to="/likes">Likes</Link>
                     )}
                 </li>
+                <li>
+                    {currentPage === "CocktailPage" ? (
+                        <strong><Link to="/cocktail">Cocktails</Link></strong>
+                    ) : (
+                        <Link to="/cocktail">Cocktails</Link>
+                    )}
+                </li>
             </ul>
         </header>
     )
