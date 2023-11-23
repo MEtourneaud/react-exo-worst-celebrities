@@ -35,6 +35,7 @@ function CocktailPage() {
                         return (
                             <article>
                                 <h3>{cocktail.strDrink}</h3>
+                                <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
                             </article>
                         )
                     })}
