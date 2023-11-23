@@ -19,8 +19,9 @@ function CocktailPage() {
         })
         // Une fois qu'elles sont récupérées le second "then" permet d'afficher ces données en json dans un console log
         .then((cocktailsInJs) => {
-            console.log(cocktailsInJs);
-            setCocktails(cocktailsInJs);
+            // console.log(cocktailsInJs);
+            // On rajoute le .drinks pour récupérer la clé de l'API
+            setCocktails(cocktailsInJs.drinks);
     })}
     
     return(
@@ -28,9 +29,16 @@ function CocktailPage() {
             <Header currentPage={"CocktailPage"}/>
             {/* Ici je fais en sorte qu'un affichage ait lieu même si les données ne sont pas prêtes à être affichées */}
             {cocktails ? (
-                <div>
-                    <p>Voici les cocktails</p>
-                </div>
+                <>
+                {/* On parcourt le tableau "cocktails" afin de récupérer chaque élément du tableau et d'afficher le leur nom */}
+                    {cocktails.map((cocktail) => {
+                        return (
+                            <article>
+                                <h3>{cocktail.strDrink}</h3>
+                            </article>
+                        )
+                    })}
+                </>
             ) : (
                 <div>
                     <p>Cocktails en cours de préparation</p>
