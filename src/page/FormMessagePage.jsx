@@ -16,7 +16,7 @@ function FormMessagePage() {
 
     return(
         <>
-            <Header />
+            <Header currentPage={"FormMessagePage"}/>
             <form>
                 <label>
                     Message

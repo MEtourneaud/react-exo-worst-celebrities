@@ -17,7 +17,7 @@ function CopyrightPage() {
 
     return(
         <>
-            <Header />
+            <Header currentPage={"CopyrightPage"}/>
             {/* J'utilise ici la valeur displayText pour faire afficher ou non le texte */}
             {displayText && (
                 <p>Bonjour !</p>

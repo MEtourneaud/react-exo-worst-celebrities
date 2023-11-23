@@ -48,6 +48,13 @@ function Header( {currentPage} ) {
                         <Link to="/message">Message</Link>
                     )}
                 </li>
+                <li>
+                    {currentPage === "LikesPage" ? (
+                        <strong><Link to="/likes">Likes</Link></strong>
+                    ) : (
+                        <Link to="/likes">Likes</Link>
+                    )}
+                </li>
             </ul>
         </header>
     )
