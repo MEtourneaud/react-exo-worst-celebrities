@@ -17,13 +17,14 @@ function LikesPage() {
         } else {
         // Arrivé à (likeCount < 5) je fais passer setDisplayMessage à "true" et je réinitialise setLike à "0"
             setDisplayMessage(true)
-            setLike(0)
+            // setLike(0)
         }
     }
 
     const handleCloseMessage= () => {
     // Ici, tant que je n'appelle pas ma fonction setDisplayMessage reste à "false" pour ne rien afficher
         setDisplayMessage(false)
+        setLike(0)
     }
 
     return(
